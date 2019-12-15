@@ -1,0 +1,8 @@
+prefix=/home/nvidia/catkin_ws_/devel
+
+Name: map
+Description: Description of map
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/nvidia/catkin_ws_/devel/lib 
+Requires: 

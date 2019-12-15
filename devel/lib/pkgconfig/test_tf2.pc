@@ -1,0 +1,8 @@
+prefix=/home/nvidia/catkin_ws_/devel
+
+Name: test_tf2
+Description: Description of test_tf2
+Version: 0.6.5
+Cflags: 
+Libs: -L/home/nvidia/catkin_ws_/devel/lib 
+Requires: 

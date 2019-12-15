@@ -1,0 +1,8 @@
+prefix=/home/nvidia/catkin_ws_/devel
+
+Name: ca_description
+Description: Description of ca_description
+Version: 1.3.0
+Cflags: 
+Libs: -L/home/nvidia/catkin_ws_/devel/lib 
+Requires: 

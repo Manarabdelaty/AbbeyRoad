@@ -1,0 +1,12 @@
+<launch>
+	
+	<!-- 
+     		Launch Odometry node 
+   	-->
+
+ <node name="rplidarNode" pkg="rplidar_ros" type="rplidarNode" output="screen">
+		<param name="frame_id" type="string" value="base_link"/>    
+ </node>
+ <node pkg="wheelchair_setup_tf" type="tf_broadcaster" name="tf_broadcaster" output="screen">
+ </node>
+</launch> 

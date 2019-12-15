@@ -1,0 +1,8 @@
+prefix=/home/nvidia/catkin_ws_/devel
+
+Name: tf2_msgs
+Description: Description of tf2_msgs
+Version: 0.6.5
+Cflags: -I/home/nvidia/catkin_ws_/devel/include -I/home/nvidia/catkin_ws_/src/geometry2/tf2_msgs/include
+Libs: -L/home/nvidia/catkin_ws_/devel/lib 
+Requires: message_generation geometry_msgs actionlib_msgs

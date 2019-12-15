@@ -1,0 +1,5 @@
+<launch>
+   <master auto="start"/>
+    <node pkg="odometery" type="ser.py" name="encoder" output="screen"/>	
+    <include file="$(find differential_drive)/launch/diff_drive.launch" />
+</launch> 

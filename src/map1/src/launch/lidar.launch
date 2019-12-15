@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+
+
+<node name="rplidarNode" pkg="rplidar_ros" type="rplidarNode"/>
+
+</launch>

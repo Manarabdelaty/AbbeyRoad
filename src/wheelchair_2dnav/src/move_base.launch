@@ -1,0 +1,29 @@
+<launch>
+
+   <master auto="start"/>
+ <!-- Run the map server --> 
+    <node name="map_server" pkg="map_server" type="map_server" args="$(find wheelchair_2dnav)/src/maps/map.yaml" output="screen"/>
+    <include file="$(find wheelchair_2dnav)/src/wheelchair_config.launch" />
+ <!--- Run AMCL --> 
+
+    <node pkg="odometery" type="ser.py" name="encoder" output="screen"/>
+
+    <include file="$(find differential_drive)/launch/diff_drive.launch" />
+
+   <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+    <rosparam file="$(find wheelchair_2dnav)/src/costmap_common_params.yaml" command="load" ns="global_costmap" /> 
+    <rosparam file="$(find wheelchair_2dnav)/src/costmap_common_params.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find wheelchair_2dnav)/src/local_costmap_params.yaml" command="load" />
+    <rosparam file="$(find wheelchair_2dnav)/src/global_costmap_params.yaml" command="load" /> 
+    <rosparam file="$(find wheelchair_2dnav)/src/base_local_planner_params.yaml" command="load" />
+    <rosparam file="$(find wheelchair_2dnav)/src/global_planner_params.yaml" command="load" />
+
+    <param name = "controller_frequency" value = "10.0"/>
+
+ 	</node>
+
+   	
+	 
+	<include file="$(find amcl)/examples/amcl_diff.launch" />
+
+</launch> 

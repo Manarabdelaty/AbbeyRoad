@@ -1,0 +1,8 @@
+prefix=/home/nvidia/catkin_ws_/devel
+
+Name: wheelchair_setup_tf
+Description: Description of wheelchair_setup_tf
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/nvidia/catkin_ws_/devel/lib 
+Requires: 

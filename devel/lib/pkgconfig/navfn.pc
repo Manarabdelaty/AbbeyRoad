@@ -1,0 +1,8 @@
+prefix=/home/nvidia/catkin_ws_/devel
+
+Name: navfn
+Description: Description of navfn
+Version: 1.16.2
+Cflags: -I/home/nvidia/catkin_ws_/devel/include -I/home/nvidia/catkin_ws_/src/navigation/navfn/include
+Libs: -L/home/nvidia/catkin_ws_/devel/lib -lnavfn
+Requires: geometry_msgs message_runtime nav_core nav_msgs pluginlib roscpp sensor_msgs visualization_msgs

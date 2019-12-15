@@ -1,0 +1,2 @@
+set(ca_msgs_MESSAGE_FILES "/home/nvidia/catkin_ws_/src/create_autonomy/ca_msgs/msg/Bumper.msg;/home/nvidia/catkin_ws_/src/create_autonomy/ca_msgs/msg/ChargingState.msg;/home/nvidia/catkin_ws_/src/create_autonomy/ca_msgs/msg/DefineSong.msg;/home/nvidia/catkin_ws_/src/create_autonomy/ca_msgs/msg/Mode.msg;/home/nvidia/catkin_ws_/src/create_autonomy/ca_msgs/msg/PlaySong.msg")
+set(ca_msgs_SERVICE_FILES "")

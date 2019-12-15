@@ -1,0 +1,8 @@
+prefix=/home/nvidia/catkin_ws_/devel
+
+Name: move_slow_and_clear
+Description: Description of move_slow_and_clear
+Version: 1.16.2
+Cflags: -I/home/nvidia/catkin_ws_/src/navigation/move_slow_and_clear/include
+Libs: -L/home/nvidia/catkin_ws_/devel/lib -lmove_slow_and_clear
+Requires: geometry_msgs nav_core pluginlib roscpp

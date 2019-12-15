@@ -1,0 +1,12 @@
+<launch>
+	<!-- 
+     		Launch Roomba 
+   	-->
+ <include file="$(find ca_driver)launch/create_2.launch"/>
+
+ <node name="rplidarNode" pkg="rplidar_ros" type="rplidarNode" output="screen">
+		<param name="frame_id" type="string" value="base_link"/>    
+ </node>
+ <node pkg="robot_setup_tf" type="tf_broadcaster" name="tf_broadcaster" output="screen">
+ </node>
+</launch> 

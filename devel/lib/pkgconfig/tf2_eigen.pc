@@ -1,0 +1,8 @@
+prefix=/home/nvidia/catkin_ws_/devel
+
+Name: tf2_eigen
+Description: Description of tf2_eigen
+Version: 0.6.5
+Cflags: -I/home/nvidia/catkin_ws_/src/geometry2/tf2_eigen/include -I/usr/include/eigen3
+Libs: -L/home/nvidia/catkin_ws_/devel/lib 
+Requires: 
